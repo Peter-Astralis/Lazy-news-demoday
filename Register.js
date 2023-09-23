@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     
-    fetch('https://api-nine-dun.vercel.app/auth/register', {
+    fetch('https://api-pi-sand.vercel.app/auth/register', {
       method: 'POST', 
       headers: {
         'Content-Type': 'application/json' 
