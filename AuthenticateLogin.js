@@ -7,7 +7,7 @@ function loginBTN() {
     password: password
   };
 
-  fetch('https://api-nine-dun.vercel.app/auth/authenticate', {
+  fetch('https://api-pi-sand.vercel.app/auth/authenticate', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
