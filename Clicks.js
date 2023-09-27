@@ -1,5 +1,3 @@
-console.log('Clicks.js is running');
-
 function loadPage(pageURL) {
   window.location.href = pageURL;
 }
@@ -14,15 +12,23 @@ document.querySelectorAll('nav ul li a').forEach(link => {
 
 function scaleButton() { 
   const button = document.getElementById('cadastro-btn');
-  button.style.transform = 'scale(1.1)';
+  if (button) {
+    button.style.transform = 'scale(1.1)';
+  }
 }
+
 function resetButton() {
   const button = document.getElementById('cadastro-btn');
-  button.style.transform = 'scale(1)'; 
+  if (button) {
+    button.style.transform = 'scale(1)';
+  }
 }
+
 function escalaBotaoCadastro() {
   const button = document.getElementById('cadastro-btn');
-  button.style.transform = 'scale(1.1)';
+  if (button) {
+    button.style.transform = 'scale(1.1)';
+  }
 }
 
 function exibirMenu() {
@@ -35,8 +41,6 @@ function ocultarMenu() {
   menuText.style.display = 'none';
 }
 
-
-
 function redirectToLogin() {
   window.location.href = "Login.html";
 }
@@ -45,4 +49,3 @@ const cadastroButton = document.querySelector('.logo-btn');
 cadastroButton.addEventListener('mouseover', scaleButton); 
 cadastroButton.addEventListener('mouseleave', resetButton);
 cadastroButton.addEventListener('click', redirectToLogin);
-
